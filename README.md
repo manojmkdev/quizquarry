@@ -250,17 +250,6 @@ Select your role during registration. Google OAuth accounts are automatically cr
 
 ---
 
-## 🧪 Running Tests
-
-```bash
-cd backend
-mvn test
-```
-
-Tests use **TestNG** with a suite defined in `src/test/resources/testng.xml`.
-
----
-
 ## 📄 License
 
 This project is open source. Feel free to use, modify, and distribute.
