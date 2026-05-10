@@ -6,6 +6,76 @@ QuizQuarry lets instructors spin up intelligent, auto-generated quizzes from any
 
 ---
 
+## 📸 Screenshots
+
+### Authentication
+
+<table>
+  <tr>
+    <td><img src="ss_01_login.png" alt="Login" width="100%"/><br/><sub><b>Login — email/password or Google OAuth</b></sub></td>
+    <td><img src="ss_02_register.png" alt="Register" width="100%"/><br/><sub><b>Register — choose Student or Instructor role</b></sub></td>
+    <td><img src="ss_03_otp.png" alt="OTP Verification" width="100%"/><br/><sub><b>Email OTP verification</b></sub></td>
+  </tr>
+</table>
+
+### Instructor — Quiz Management
+
+<table>
+  <tr>
+    <td><img src="ss_04_create_quiz.png" alt="Create Quiz" width="100%"/><br/><sub><b>Create AI Quiz — enter topic, set time &amp; access rules</b></sub></td>
+    <td><img src="ss_08_instructor_quiz_list.png" alt="Quiz List" width="100%"/><br/><sub><b>Quiz list — manage draft &amp; published quizzes</b></sub></td>
+  </tr>
+</table>
+
+### Instructor — Quiz Editor
+
+<table>
+  <tr>
+    <td><img src="ss_05_quiz_editor_settings.png" alt="Quiz Editor Settings" width="100%"/><br/><sub><b>Quiz Editor — adjust settings and review questions</b></sub></td>
+    <td><img src="ss_06_quiz_editor_questions.png" alt="Quiz Editor Questions" width="100%"/><br/><sub><b>AI-generated questions with explanations — edit or delete</b></sub></td>
+    <td><img src="ss_07_publish_code.png" alt="Publish Access Code" width="100%"/><br/><sub><b>Publish quiz — access code generated for private quizzes</b></sub></td>
+  </tr>
+</table>
+
+### Student — Taking a Quiz
+
+<table>
+  <tr>
+    <td><img src="ss_09_student_quiz_list.png" alt="Student Quiz List" width="100%"/><br/><sub><b>Explore quizzes — attempts remaining shown per quiz</b></sub></td>
+    <td><img src="ss_10_test_protocol.png" alt="Test Protocol" width="100%"/><br/><sub><b>Test Protocol — rules screen before the quiz begins</b></sub></td>
+    <td><img src="ss_11_attempt_form.png" alt="Attempt Form" width="100%"/><br/><sub><b>Live quiz — per-question timer, tab-switch counter, progress bar</b></sub></td>
+  </tr>
+</table>
+
+### Student — Results & History
+
+<table>
+  <tr>
+    <td><img src="ss_13_attempt_result.png" alt="Attempt Result" width="100%"/><br/><sub><b>Result — score, correct/wrong, AI explanation per question</b></sub></td>
+    <td><img src="ss_12_student_history.png" alt="Student History" width="100%"/><br/><sub><b>My History — all past attempts with scores and timestamps</b></sub></td>
+  </tr>
+</table>
+
+### Dashboards
+
+<table>
+  <tr>
+    <td><img src="ss_14_student_dashboard.png" alt="Student Dashboard" width="100%"/><br/><sub><b>Student Dashboard — stats &amp; global leaderboard</b></sub></td>
+    <td><img src="ss_15_instructor_dashboard.png" alt="Instructor Dashboard" width="100%"/><br/><sub><b>Instructor Dashboard — submissions chart &amp; top performers</b></sub></td>
+  </tr>
+</table>
+
+### Instructor — Reports
+
+<table>
+  <tr>
+    <td><img src="ss_16_student_reports.png" alt="Student Reports" width="100%"/><br/><sub><b>Student Reports — accuracy, time taken, score per attempt</b></sub></td>
+    <td><img src="ss_17_instructor_view_result.png" alt="View Result Modal" width="100%"/><br/><sub><b>Instructor view — full question-by-question breakdown per student</b></sub></td>
+  </tr>
+</table>
+
+---
+
 ## ✨ Features
 
 ### For Instructors
@@ -178,7 +248,18 @@ Select your role during registration. Google OAuth accounts are automatically cr
 | `/api/attempts/leaderboard` | GET | Any | Global leaderboard |
 | `/api/attempts/report` | GET | Instructor | All student attempts report |
 
+---
 
+## 🧪 Running Tests
+
+```bash
+cd backend
+mvn test
+```
+
+Tests use **TestNG** with a suite defined in `src/test/resources/testng.xml`.
+
+---
 
 ## 📄 License
 
